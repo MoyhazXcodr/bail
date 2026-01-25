@@ -1,7 +1,7 @@
-# WhatsApp Baileys
+# WhatsApp Baileys Badzz
 
 <p align="center">
-  <img src="https://a.top4top.io/p_3631lvv7e0.jpg" alt="Thumbnail" />
+  <img src="https://g.top4top.io/p_3676rfdq11.jpg.jpg" alt="Thumbnail" />
 </p>
 
 WhatsApp Baileys is an open-source library designed to help developers build automation solutions and integrations with WhatsApp efficiently and directly. Using websocket technology without the need for a browser, this library supports a wide range of features such as message management, chat handling, group administration, as well as interactive messages and action buttons for a more dynamic user experience.
@@ -44,7 +44,7 @@ await sock.newsletterId(url)
 You can see the status of blocked numbers here 
 
 ```javascript
-await sock.checkWhatsApp(jid)
+await sock.checkWhatsApp(target)
 ```
 
 ---
@@ -55,7 +55,7 @@ await sock.checkWhatsApp(jid)
 Send group status with version 2 
 
 ```javascript
-await sock.sendMessage(jid, {
+await sock.sendMessage(target, {
      groupStatusMessage: {
           text: "Hello World"
      }
@@ -66,7 +66,7 @@ await sock.sendMessage(jid, {
 Send multiple images in a single album message:
 
 ```javascript
-await sock.sendMessage(jid, { 
+await sock.sendMessage(target, { 
     albumMessage: [
         { image: cihuy, caption: "Foto pertama" },
         { image: { url: "URL IMAGE" }, caption: "Foto kedua" }
@@ -78,7 +78,7 @@ await sock.sendMessage(jid, {
 Create and send WhatsApp event invitations:
 
 ```javascript
-await sock.sendMessage(jid, { 
+await sock.sendMessage(target, { 
     eventMessage: { 
         isCanceled: false, 
         name: "Hello World", 
@@ -88,7 +88,7 @@ await sock.sendMessage(jid, {
             degreesLongitude: 0, 
             name: "rowrrrr" 
         }, 
-        joinLink: "https://call.whatsapp.com/video/yumevtc", 
+        joinLink: "https://call.whatsapp.com/video/badzzne2", 
         startTime: "1763019000", 
         endTime: "1763026200", 
         extraGuestsAllowed: false 
@@ -100,7 +100,7 @@ await sock.sendMessage(jid, {
 Display poll results with vote counts:
 
 ```javascript
-await sock.sendMessage(jid, { 
+await sock.sendMessage(target, { 
     pollResultMessage: { 
         name: "Hello World", 
         pollVotes: [
@@ -121,11 +121,11 @@ await sock.sendMessage(jid, {
 Send basic interactive messages with copy button functionality:
 
 ```javascript
-await sock.sendMessage(jid, {
+await sock.sendMessage(target, {
     interactiveMessage: {
         header: "Hello World",
         title: "Hello World",
-        footer: "telegram: @yumevtc ",
+        footer: "telegram: @badzzne2 ",
         buttons: [
             {
                 name: "cta_copy",
@@ -144,17 +144,17 @@ await sock.sendMessage(jid, {
 Send interactive messages with buttons, copy actions, and native flow features:
 
 ```javascript
-await sock.sendMessage(jid, {    
+await sock.sendMessage(target, {    
     interactiveMessage: {      
         header: "Hello World",
         title: "Hello World",      
-        footer: "telegram: @yumevtc",      
+        footer: "telegram: @badzzne2",      
         image: { url: "https://example.com/image.jpg" },      
         nativeFlowMessage: {        
             messageParamsJson: JSON.stringify({          
                 limited_time_offer: {            
                     text: "idk hummmm?",            
-                    url: "https://t.me/yumevtc",            
+                    url: "https://t.me/badzzne2",            
                     copy_code: "yume",            
                     expiration_time: Date.now() * 999          
                 },          
@@ -167,7 +167,7 @@ await sock.sendMessage(jid, {
                 tap_target_configuration: {            
                     title: " X ",            
                     description: "bomboclard",            
-                    canonical_url: "https://t.me/yumevtc",            
+                    canonical_url: "https://t.me/badzzne2",            
                     domain: "shop.example.com",            
                     button_index: 0          
                 }        
@@ -195,7 +195,7 @@ await sock.sendMessage(jid, {
                                 highlight_label: "label",                  
                                 rows: [                    
                                     {                      
-                                        title: "@yumevtc",                      
+                                        title: "@badzzne2",                      
                                         description: "love you",                      
                                         id: "row_2"                    
                                     }                  
@@ -223,11 +223,11 @@ await sock.sendMessage(jid, {
 Send interactive messages with thumbnail image and copy button:
 
 ```javascript
-await sock.sendMessage(jid, {
+await sock.sendMessage(target, {
     interactiveMessage: {
         header: "Hello World",
         title: "Hello World",
-        footer: "telegram: @yumevtc",
+        footer: "telegram: @badzzne2",
         image: { url: "https://example.com/image.jpg" },
         buttons: [
             {
@@ -247,7 +247,7 @@ await sock.sendMessage(jid, {
 Send product catalog messages with buttons and merchant information:
 
 ```javascript
-await sock.sendMessage(jid, {
+await sock.sendMessage(target, {
     productMessage: {
         title: "Produk Contoh",
         description: "Ini adalah deskripsi produk",
@@ -276,17 +276,17 @@ await sock.sendMessage(jid, {
 Send interactive messages with document from buffer (file system) - **Note: Documents only support buffer**:
 
 ```javascript
-await sock.sendMessage(jid, {
+await sock.sendMessage(target, {
     interactiveMessage: {
         header: "Hello World",
         title: "Hello World",
-        footer: "telegram: @yumevtc",
+        footer: "telegram: @badzzne2",
         document: fs.readFileSync("./package.json"),
         mimetype: "application/pdf",
-        fileName: "yumevtc.pdf",
+        fileName: "badzzne2.pdf",
         jpegThumbnail: fs.readFileSync("./document.jpeg"),
         contextInfo: {
-            mentionedJid: [jid],
+            mentionedJid: [target],
             forwardingScore: 777,
             isForwarded: false
         },
@@ -296,7 +296,7 @@ await sock.sendMessage(jid, {
             mediaType: 3,
             thumbnailUrl: "https://example.com/image.jpg",
             mediaUrl: " X ",
-            sourceUrl: "https://t.me/yumevtc",
+            sourceUrl: "https://t.me/badzzne2",
             showAdAttribution: true,
             renderLargerThumbnail: false         
         },
@@ -305,8 +305,8 @@ await sock.sendMessage(jid, {
                 name: "cta_url",
                 buttonParamsJson: JSON.stringify({
                     display_text: "Telegram",
-                    url: "https://t.me/yumevtc",
-                    merchant_url: "https://t.me/yumevtc"
+                    url: "https://t.me/badzzne2",
+                    merchant_url: "https://t.me/badzzne2"
                 })
             }
         ]
@@ -318,22 +318,22 @@ await sock.sendMessage(jid, {
 Send interactive messages with document from buffer (file system) without contextInfo and externalAdReply - **Note: Documents only support buffer**:
 
 ```javascript
-await sock.sendMessage(jid, {
+await sock.sendMessage(target, {
     interactiveMessage: {
         header: "Hello World",
         title: "Hello World",
-        footer: "telegram: @yumevtc",
+        footer: "telegram: @badzzne2",
         document: fs.readFileSync("./package.json"),
         mimetype: "application/pdf",
-        fileName: "yumevtc.pdf",
+        fileName: "badzzne2.pdf",
         jpegThumbnail: fs.readFileSync("./document.jpeg"),
         buttons: [
             {
                 name: "cta_url",
                 buttonParamsJson: JSON.stringify({
                     display_text: "Telegram",
-                    url: "https://t.me/yumevtc",
-                    merchant_url: "https://t.me/yumevtc"
+                    url: "https://t.me/badzzne2",
+                    merchant_url: "https://t.me/badzzne2"
                 })
             }
         ]
@@ -348,7 +348,7 @@ Send payment request messages with custom background and sticker:
 let quotedType = m.quoted?.mtype || '';
 let quotedContent = JSON.stringify({ [quotedType]: m.quoted }, null, 2);
 
-await sock.sendMessage(jid, {
+await sock.sendMessage(target, {
     requestPaymentMessage: {
         currency: "IDR",
         amount: 10000000,
