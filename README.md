@@ -125,7 +125,7 @@ await sock.sendMessage(target, {
     interactiveMessage: {
         header: "Hello World",
         title: "Hello World",
-        footer: "telegram: @Raffioffci2 ",
+        footer: "telegram: @Moyhazgntk",
         buttons: [
             {
                 name: "cta_copy",
